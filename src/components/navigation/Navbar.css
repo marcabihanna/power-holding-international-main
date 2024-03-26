@@ -1,0 +1,84 @@
+/* Rest of the styles */
+.hamburger {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 25px; /* Adjust for size of hamburger icon */
+}
+
+.hamburger span {
+  display: block;
+  width: 30px; /* Adjust for width of hamburger icon */
+  height: 3px; /* Adjust for thickness of hamburger lines */
+  background-color: #333; /* Adjust for color of hamburger lines */
+  transition: background-color 0.3s ease;
+}
+
+.hamburger:hover span {
+  background-color: #4d7ec8; /* Change color on hover if desired */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f8f8;
+  padding: 0.5rem 2rem;
+}
+
+.navbar-logo {
+  height: 80px; /* Adjust the height to match the size in your image */
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: -100%; /* Start offscreen to the right */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgba(235, 239, 245); /* Dimmed background */
+  overflow: hidden;
+  z-index: 1000; /* Make sure the menu is above other content */
+  transition: right 0.3s ease-in-out; /* Animate the right property */
+}
+
+.menu.open {
+  right: 0; /* Slide in from right to left */
+}
+
+.menu-close {
+  position: absolute;
+  top: 1rem;
+  left: 1.5rem; /* Adjusted to left side for RTL */
+  font-size: 2rem;
+  cursor: pointer;
+  color: #fff; /* Adjust color as needed */
+}
+
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu ul li a {
+  color: white; /* Text color */
+  font-size: 1.5rem; /* Adjust font size as needed */
+  padding: 0.5rem 0;
+  text-decoration: none;
+  transition: transform 0.3s ease-in-out;
+}
+
+.menu ul li a:hover {
+  transform: translateX(10px); /* Hover effect */
+}
+
+.social-icons {
+  /* Style your social icons here */
+}
+
+/* Add styles for animation of individual menu items if desired */

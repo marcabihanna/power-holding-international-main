@@ -1,0 +1,102 @@
+.background_contentone {
+  position: relative;
+  top: 0px;
+  width: 100%;
+  height: 100vh;
+  background: white;
+  margin: -100vh auto 0 auto;
+  z-index: 98;
+  position: relative;
+  background-color: #002a48;
+  background-size: cover;
+  text-align: center;
+  padding-top: 80px;
+}
+
+.parallax-content {
+  width: 100%;
+  max-width: 1200px; /* Adjust the max-width as needed */
+  margin: 0 auto;
+  padding: 100px 50px; /* Adjust padding as needed */
+  text-align: left;
+  color: white; /* Adjust text color as needed */
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+/* Add more styles for h1, p, button etc., as per your design */
+
+.parallax-content h1 {
+  margin-bottom: 1em;
+}
+
+.parallax-content p {
+  margin-bottom: 1em;
+}
+
+.parallax-content button {
+  padding: 10px 20px; /* Increase horizontal padding to enhance the pill shape */
+  border: solid white;
+  border-radius: 50em; /* High value to create fully rounded ends */
+  background: #002a48; /* Example button color */
+  color: white;
+  cursor: pointer;
+  font-size: 1rem; /* Adjust font size as necessary */
+  outline: none; /* Remove outline to keep the styling clean */
+  border: solid; /* No border if you want it solid color */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.parallax-content button:hover {
+  background-color: #004a70; /* Slightly darker color on hover for interactivity */
+}
+
+.stats-header {
+  margin-top: 250px;
+}
+
+.stats-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  gap: 30px;
+  margin-bottom: 4rem;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  width: 150px;
+}
+
+.stat-icon {
+  width: 50px; /* Icon size */
+  height: auto;
+  margin-bottom: 10px;
+  margin-left: 25px;
+}
+
+.stat-number {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.stat-title {
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin-left: 5px;
+}
+
+/* For larger screens, adjust the gaps and widths */
+@media (min-width: 768px) {
+  .stats-container {
+    gap: 50px;
+  }
+
+  .stat {
+    width: 200px;
+  }
+}
