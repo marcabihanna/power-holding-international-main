@@ -27,31 +27,6 @@ const stats = [
     number: "65,000+",
     title: "EMPLOYEES",
   },
-  {
-    icon: <FaPeopleGroup alt="Employees Icon" className="stat-icon" />,
-    number: "65,000+",
-    title: "EMPLOYEES",
-  },
-  {
-    icon: <FaPeopleGroup alt="Employees Icon" className="stat-icon" />,
-    number: "65,000+",
-    title: "EMPLOYEES",
-  },
-  {
-    icon: <FaPeopleGroup alt="Employees Icon" className="stat-icon" />,
-    number: "65,000+",
-    title: "EMPLOYEES",
-  },
-  {
-    icon: <FaPeopleGroup alt="Employees Icon" className="stat-icon" />,
-    number: "65,000+",
-    title: "EMPLOYEES",
-  },
-  {
-    icon: <FaPeopleGroup alt="Employees Icon" className="stat-icon" />,
-    number: "65,000+",
-    title: "EMPLOYEES",
-  },
 ];
 
 const ParallaxSection = () => {
@@ -72,6 +47,15 @@ const ParallaxSection = () => {
 
           <div className="stats-header">
             <h1>By The Numbers</h1>
+          </div>
+          <div className="stats-content">
+            {stats.map((stat, index) => (
+              <div key={index} className="stat">
+                {stat.icon}
+                <p className="stat-number">{stat.number}</p>
+                <p className="stat-title">{stat.title}</p>
+              </div>
+            ))}
           </div>
           <div className="stats-content">
             {stats.map((stat, index) => (
