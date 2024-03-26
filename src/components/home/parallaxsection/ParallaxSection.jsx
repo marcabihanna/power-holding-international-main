@@ -1,5 +1,58 @@
-import "./ParallaxSection.css"; // Ensure this CSS file contains your new styles
 import { FaPeopleGroup } from "react-icons/fa6";
+import "./ParallaxSection.css";
+
+const stats = [
+  {
+    icon: <FaPeopleGroup alt="Employees Icon" className="stat-icon" />,
+    number: "65,000+",
+    title: "EMPLOYEES",
+  },
+  {
+    icon: <FaPeopleGroup alt="Employees Icon" className="stat-icon" />,
+    number: "65,000+",
+    title: "EMPLOYEES",
+  },
+  {
+    icon: <FaPeopleGroup alt="Employees Icon" className="stat-icon" />,
+    number: "65,000+",
+    title: "EMPLOYEES",
+  },
+  {
+    icon: <FaPeopleGroup alt="Employees Icon" className="stat-icon" />,
+    number: "65,000+",
+    title: "EMPLOYEES",
+  },
+  {
+    icon: <FaPeopleGroup alt="Employees Icon" className="stat-icon" />,
+    number: "65,000+",
+    title: "EMPLOYEES",
+  },
+  {
+    icon: <FaPeopleGroup alt="Employees Icon" className="stat-icon" />,
+    number: "65,000+",
+    title: "EMPLOYEES",
+  },
+  {
+    icon: <FaPeopleGroup alt="Employees Icon" className="stat-icon" />,
+    number: "65,000+",
+    title: "EMPLOYEES",
+  },
+  {
+    icon: <FaPeopleGroup alt="Employees Icon" className="stat-icon" />,
+    number: "65,000+",
+    title: "EMPLOYEES",
+  },
+  {
+    icon: <FaPeopleGroup alt="Employees Icon" className="stat-icon" />,
+    number: "65,000+",
+    title: "EMPLOYEES",
+  },
+  {
+    icon: <FaPeopleGroup alt="Employees Icon" className="stat-icon" />,
+    number: "65,000+",
+    title: "EMPLOYEES",
+  },
+];
 
 const ParallaxSection = () => {
   return (
@@ -21,70 +74,13 @@ const ParallaxSection = () => {
             <h1>By The Numbers</h1>
           </div>
           <div className="stats-content">
-            <div className="stat">
-              <FaPeopleGroup
-                alt="Employees Icon"
-                className="stat-icon"
-              ></FaPeopleGroup>
-              <p className="stat-number">65,000+</p>
-              <p className="stat-title">EMPLOYEES</p>
-            </div>
-            <div className="stat">
-              <FaPeopleGroup
-                alt="Employees Icon"
-                className="stat-icon"
-              ></FaPeopleGroup>
-              <p className="stat-number">65,000+</p>
-              <p className="stat-title">EMPLOYEES</p>
-            </div>
-            <div className="stat">
-              <FaPeopleGroup
-                alt="Employees Icon"
-                className="stat-icon"
-              ></FaPeopleGroup>
-              <p className="stat-number">65,000+</p>
-              <p className="stat-title">EMPLOYEES</p>
-            </div>
-            <div className="stat">
-              <FaPeopleGroup
-                alt="Employees Icon"
-                className="stat-icon"
-              ></FaPeopleGroup>
-              <p className="stat-number">65,000+</p>
-              <p className="stat-title">EMPLOYEES</p>
-            </div>
-            <div className="stat">
-              <FaPeopleGroup
-                alt="Employees Icon"
-                className="stat-icon"
-              ></FaPeopleGroup>
-              <p className="stat-number">65,000+</p>
-              <p className="stat-title">EMPLOYEES</p>
-            </div>
-            <div className="stat">
-              <FaPeopleGroup
-                alt="Employees Icon"
-                className="stat-icon"
-              ></FaPeopleGroup>
-              <p className="stat-number">65,000+</p>
-              <p className="stat-title">EMPLOYEES</p>
-            </div>
-            <div className="stat">
-              <FaPeopleGroup
-                alt="Employees Icon"
-                className="stat-icon"
-              ></FaPeopleGroup>
-              <p className="stat-number">65,000+</p>
-              <p className="stat-title">EMPLOYEES</p>
-            </div>
-            <div className="stat">
-              <FaPeopleGroup
-                alt="Employees Icon"
-                className="stat-icon"
-              ></FaPeopleGroup>
-              <p className="stat-number">65,000+</p>
-              <p className="stat-title">EMPLOYEES</p>
-            </div>
+            {stats.map((stat, index) => (
+              <div key={index} className="stat">
+                {stat.icon}
+                <p className="stat-number">{stat.number}</p>
+                <p className="stat-title">{stat.title}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
