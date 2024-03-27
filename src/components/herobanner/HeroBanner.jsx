@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import bgImage3 from "../../assets/images/bg3.avif";
+import bgImage3 from "../../assets/images/PIH-assets-the-18.jpg";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import "./HeroBanner.css";
